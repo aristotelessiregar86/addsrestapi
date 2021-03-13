@@ -5,5 +5,12 @@ const conn = mySQL.createConnection({
     user: 'root',
     password: '',
     database: 'belajarDB'
-})
+});
+ 
+conn.connect((err) => {
+    if(err) throw err;
+    console.log('mySQL Terkoneksi Bos.....')
+});
+
+module.exports();
 
